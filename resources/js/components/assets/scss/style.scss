@@ -1,0 +1,373 @@
+@import "./_themes-vars.module.scss";
+@import "./variables/variables.scss";
+
+header {
+    padding-right: 26px !important;
+    margin-top: -5px;
+}
+
+.css-1cywwhe-MuiModal-root-MuiDrawer-root {
+    position: fixed;
+    z-index: 1308 !important;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+}
+
+.main-header {
+    height: 75px;
+    padding: 16px 24px;
+    background: $paper !important;
+    box-shadow: none !important;
+
+    .toogle {
+        .MuiAvatar-root {
+            width: 35px;
+            height: 35px;
+            background: $primaryColor50;
+
+            svg {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    .toogle:hover {
+        .MuiAvatar-root {
+            background: $primaryColor;
+
+            svg {
+                color: $primaryColor50;
+            }
+        }
+    }
+
+    .profile-icon {
+        border-radius: 100px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .profile-toogle {
+        .ant-space-item:last-child {
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+    }
+
+    .profile-btn {
+        background: $secondaryColor50;
+        border-color: $secondaryColor50;
+        color: $secondaryColor;
+    }
+
+    .profile-btn:hover {
+        background: $secondaryColor;
+        border-color: $secondaryColor;
+        color: $secondaryColor50;
+    }
+
+    .profile-btn-active {
+        background: $secondaryColor;
+        border-color: $secondaryColor;
+        color: $secondaryColor50;
+    }
+}
+
+.main-sidebar {
+    // transform: translateX(-100%);
+    // -webkit-transform: translateX(-100%);
+    .MuiPaper-root {
+        border-right: 0px !important;
+    }
+
+    .MuiListItem-root:hover {
+        background: $primaryColor50;
+        .MuiListItemIcon-root {
+            color: $primaryColor;
+        }
+        .MuiListItemText-root {
+            color: $primaryColor;
+        }
+        .MuiTouchRipple-root {
+            color: $primaryColor;
+        }
+    }
+}
+
+.search-input {
+    border: 1px solid $grey500 !important;
+    width: 300px !important;
+    border-radius: 8px;
+    margin-top: -5px;
+
+    svg {
+        color: $grey500 !important;
+    }
+
+    .css-1iz4iln {
+        padding: 0px 8px !important;
+    }
+
+    .MuiInputBase-root {
+        width: 100% !important;
+        height: 50px;
+        input {
+            margin-left: -10px;
+            border-radius: 8px;
+            padding-right: 10px !important;
+            width: 100% !important;
+            color: $grey900 !important;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    .body-content {
+        background-color: $secondaryColor50 !important;
+        border-top-left-radius: 15px !important;
+        border-top-right-radius: 15px !important;
+        min-height: 100vh;
+    }
+}
+
+// .slide-in {
+//     animation: slide-in 0.5s forwards;
+//     -webkit-animation: slide-in 0.5s forwards;
+// }
+
+// .slide-out {
+//     animation: slide-out 0.5s forwards;
+//     -webkit-animation: slide-out 0.5s forwards;
+// }F
+
+// @keyframes slide-in {
+//     100% {
+//         transform: translateX(0%);
+//     }
+// }
+
+// @-webkit-keyframes slide-in {
+//     100% {
+//         -webkit-transform: translateX(0%);
+//     }
+// }
+
+// @keyframes slide-out {
+//     0% {
+//         transform: translateX(0%);
+//     }
+//     100% {
+//         transform: translateX(-100%);
+//     }
+// }
+
+// @-webkit-keyframes slide-out {
+//     0% {
+//         -webkit-transform: translateX(0%);
+//     }
+//     100% {
+//         -webkit-transform: translateX(-100%);
+//     }
+// }
+
+.berry-card {
+    border-radius: 12px;
+    // border-top-left-radius: 12px;
+    // border-top-right-radius: 12px;
+
+    margin: 25px;
+
+    .ant-card-head-title {
+        padding-top: 25px;
+    }
+}
+
+.css-hyum1k-MuiToolbar-root {
+    min-height: 50px !important;
+}
+
+.berry-table {
+    // overflow-x: scroll;
+    // width: 100%;
+    // white-space: nowrap;
+    .ant-table-thead {
+        height: 50px;
+
+        .ant-table-cell {
+            background: white;
+        }
+    }
+
+    // .ant-pagination {
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }
+
+    .ant-table-pagination.ant-pagination {
+        margin: 16px 12px !important;
+    }
+}
+
+.table-pagination {
+    margin-top: 20px;
+}
+
+.table-dropdown {
+    .MuiTablePagination-selectLabel {
+        display: none;
+    }
+    .MuiTablePagination-displayedRows {
+        display: none;
+    }
+    .MuiTablePagination-actions {
+        display: none;
+    }
+    .MuiInputBase-root {
+        margin-right: 12px !important;
+    }
+}
+
+.MuiButton-contained {
+    background: $secondaryColor !important;
+}
+
+.berry-login {
+    background: $primaryColor50;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.btn-w {
+    // color: $primaryColor !important;
+}
+
+.btn-w:hover {
+    background: $primaryColor50;
+    border-color: $primaryColor50;
+    color: $primaryColor;
+}
+
+.btn-w-active {
+    background: $primaryColor50;
+    border-color: $primaryColor50;
+    color: $primaryColor;
+}
+
+.btn-s {
+    // color: $secondaryColor !important;
+}
+
+.btn-s:hover {
+    background: $secondaryColor50;
+    border-color: $secondaryColor50;
+    color: $secondaryColor;
+}
+
+.btn-s-active {
+    background: $secondaryColor50;
+    border-color: $secondaryColor50;
+    color: $secondaryColor;
+}
+.btn-d {
+    // color: $dangerColor !important;
+}
+
+.btn-d:hover {
+    background: $dangerColor50;
+    border-color: $dangerColor50;
+    color: $dangerColor;
+}
+
+.btn-d-active {
+    background: $dangerColor50;
+    border-color: $dangerColor50;
+    color: $dangerColor;
+}
+
+.chip-s {
+    background: $successColor50 !important;
+    color: $successColor !important;
+}
+
+.chip-d {
+    background: $dangerColor50 !important;
+    color: $dangerColor !important;
+}
+
+.chip-w {
+    background: $warningColor50 !important;
+    color: $warningColor !important;
+}
+
+.chip-i {
+    background: $infoColor50 !important;
+    color: $infoColor !important;
+}
+
+.cp {
+    cursor: pointer !important;
+}
+
+.reservation {
+    // table > thead > tr:first-child th:first-child {
+    //     padding-left: 16px !important;
+    // }
+
+    // table > tbody > tr th:first-child {
+    //     padding-left: 16px !important;
+    // }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+        padding: 0 !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .ant-table-thead > tr > th:first-child,
+    .ant-table-tbody > tr > td:first-child {
+        padding-left: 11px !important;
+    }
+
+    .ant-table-thead > tr > th:last-child,
+    .ant-table-tbody > tr > td:last-child {
+        padding-right: 11px !important;
+    }
+}
+
+.active-reservation {
+    .ant-table-thead > tr > th:first-child,
+    .ant-table-tbody > tr > td:first-child {
+        padding-left: 11px !important;
+        width: 100px !important;
+    }
+    .ant-table-thead > tr > th:nth-child(2),
+    .ant-table-tbody > tr > td:nth-child(2) {
+        // padding-left: 11px !important;
+        width: 100px !important;
+        text-overflow: ellipsis !important;
+    }
+}
+
+.tbl_reports_table .ant-table-thead th.ant-table-column-has-sorters {
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #e6f7f3;
+}
+
+.tbl_reports_table .ant-table-summary {
+    position: relative;
+    z-index: 2;
+    background: #e6f7f3;
+}
